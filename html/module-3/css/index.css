@@ -1,0 +1,118 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tag selector */
+h2 {
+  color: coral;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Class selector */
+.heading {
+  color: blue;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* ID selector */
+#top-heading {
+  color: red;
+}
+
+/* Descendant selector */
+ul p {
+  font-size: 24px;
+  font-weight: bold;
+  color: coral;
+}
+
+/* Child selector */
+ul > li {
+  list-style-type: circle;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+/* Sister's selector */
+h2 + p {
+  font-style: italic;
+  font-size: 24px;
+}
+
+/* Attribute selector */
+p[data-style="stuff"] {
+  font-weight: bold;
+  color: red;
+  font-size: 54px;
+}
+
+/* Pseudo-class selector */
+ul li:hover {
+  list-style-type: square;
+}
+
+/* Selector grouping */
+#list-item-1 {
+  color: red;
+}
+
+#list-item-2 {
+  color: blue;
+}
+
+#list-item-3 {
+  color: green;
+}
+
+#list-item-4 {
+  color: violet;
+}
+
+/* #list-item-1,
+#list-item-2,
+#list-item-3,
+#list-item-4 {
+  text-decoration: underline;
+} */
+
+.small {
+  font-size: 16px;
+}
+
+.underlined.small {
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Or even better */
+.underlined {
+  text-decoration: underline;
+}
+
+/* Box Sizing */
+.block {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border: 10px solid;
+  margin: 10px;
+}
+
+.content-box {
+  box-sizing: content-box;
+  background-color: coral;
+  display: inline-block;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: red;
+  display: inline-block;
+}
