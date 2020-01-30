@@ -116,3 +116,127 @@ ul li:hover {
   background-color: red;
   display: inline-block;
 }
+
+.margin-example {
+  height: 250px;
+  width: 300px;
+  background-color: coral;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.vertical-margin {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  padding-top: 50px;
+}
+
+.vertical-margin .child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.horizontal-alignment {
+  padding: 25px;
+  background-color: darkblue;
+  text-align: center;
+}
+
+.horizontal-alignment p {
+  color: white;
+}
+
+.horizontal-alignment .inline-block {
+  width: 200px;
+  padding: 10px;
+  background-color: coral;
+  margin: 10px auto 0;
+  text-align: left;
+  text-align-last: right;
+}
+
+.vertical-alignment {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.vertical-alignment div {
+  display: inline-block;
+  width: 100px;
+  background-color: coral;
+}
+
+.vertical-alignment > div {
+  vertical-align: middle;
+}
+
+.vertical-alignment div:nth-child(1) {
+  height: 75px;
+}
+
+.vertical-alignment div:nth-child(2) {
+  height: 100px;
+}
+
+.vertical-alignment div:nth-child(3) {
+  height: 125px;
+}
+
+.vertical-alignment div:nth-child(4) {
+  height: 150px;
+}
+
+.vertical-text > .super {
+  vertical-align: super;
+}
+
+.vertical-text > .sub {
+  vertical-align: sub;
+}
+
+.vertical-text {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: serif;
+  color: red;
+  text-indent: 20px;
+  line-height: 1.2;
+}
+
+.background {
+  height: 500px;
+  padding: 20px;
+  border: 20px solid transparent;
+
+  text-align: right;
+  vertical-align: bottom;
+  color: white;
+  font-size: 32px;
+
+  background-color: coral;
+  background-image: url('https://picsum.photos/1200');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+button {
+  display: inline-block;
+  padding: 15px;
+  border: none;
+  background-color: coral;
+}
+
+button:hover {
+  background-color: lightblue;
+}
