@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mb {
+  height: 500px;
+}
+
+a:focus {
+  text-decoration: none;
+  color: coral;
+}
+
+/* Color Modes */
+
+.block {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.rgb {
+  background-color: rgb(255, 157, 0);
+}
+
+.hex {
+  background-color: #f60;
+}
+
+.hsl {
+  background-color: hsl(256, 100%, 45.3%);
+}
+
+.rgba {
+  background-color: rgba(255, 0, 0, 0.65);
+}
+
+.hsla {
+  background-color: hsla(118, 100%, 50%, 0.65);
+}
+
+/* CSS Gradient */
+.gradient {
+  height: 300px;
+}
+
+.linear {
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #734b6d 10%,
+    #42275a 15%,
+    #cbb4d4 75%,
+    #20002c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.radial {
+  background: radial-gradient(
+    at left,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Pseudo Elements */
+.pseudo > li::before {
+  content: "{";
+  margin-right: 5px;
+}
+
+.pseudo > li::after {
+  content: "}";
+  margin-left: 5px;
+}
+
+.pseudo-rest {
+  font-family: sans-serif;
+}
+
+.pseudo-rest::first-letter {
+  font-size: 24px;
+  color: #ff0000;
+  font-family: serif;
+}
+
+.pseudo-rest::first-line {
+  font-size: 22px;
+  color: coral;
+}
+
+.pseudo-rest::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Pseudo Classes */
+.hover {
+  background-color: coral;
+}
+
+.hover:hover {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+#target {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+#target:target {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+.pseudo-classes li:first-child,
+.pseudo-classes li:last-child {
+  background-color: #000;
+  color: #fff;
+}
+
+.pseudo-classes li p:first-of-type {
+  font-size: 24px;
+  color: coral;
+}
+
+.pseudo-classes li p:last-of-type {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pseudo-classes li:nth-child(2) {
+  font-size: 32px;
+  color: navy;
+}
+
+/* an + b cycle */
+.pseudo-classes li:nth-child(2n + 4) {
+  font-weight: 700;
+}
+
+.pseudo-empty {
+  background-color: greenyellow;
+}
+
+.pseudo-empty:empty {
+  background-color: red;
+}
